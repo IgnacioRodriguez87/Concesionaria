@@ -1,0 +1,249 @@
+/*label {
+    font-family:'Space Grotesk', sans-serif ;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin: 3vw;
+}*/
+a{
+    text-align: center;
+    font-family:'Space Grotesk', sans-serif ;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+p {
+    /*font-family: 'Wire One', sans-serif;*/
+    /*font-family: Manrope-VariableFont_wght;
+    /*font-family:'Space Grotesk', sans-serif ;*/
+    font-family: 'Manrope', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    
+    /*border: 2px solid black;*/    
+}
+body {
+    /*-webkit-font-smoothing: antialiased;  
+    background-size: cover;      
+    /*background: linear-gradient(#2e2e2e, #585858);*/
+    background: rgb(66,66,66);
+    background: linear-gradient(0deg, rgba(66,66,66,1), rgba(55,55,55,1) 83%);
+    /*background-image: url('img/fondoInicio.jpg');-*/
+      
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    height: 100%;
+    background-position: center center;
+    margin:0px;
+}
+h1 {
+    padding-top: 60px;
+    color: rgba(255, 255, 255,1); 
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Michroma', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*background-color: rgba(126, 126, 126, 0.527);*/
+    /*border: 10px #ffffff5d solid;*/
+    border-radius: 5px;
+    /*border: 2px solid red;*/
+    margin: 0px;
+}
+h1:hover {
+    padding-top: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Michroma', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 5px;;
+    box-shadow: 10px;;
+    shape-outside: -moz-element(10px);
+}
+h2{
+    text-align: center;
+    /*position: relative;*/
+    font-family: 'Manrope', sans-serif;
+    /*font-weight: lighter;*/
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /*float: none;*/
+    /*border: 10px solid black;*/
+}
+h3{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+}
+li {
+    display: inline-block;
+    margin: 1vw;    
+}
+footer
+{
+    /*width:100%;
+    height:100px;
+    bottom: 0px;*/
+    background-color:rgba(200,200,200,0.5);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    /*bottom: 0;
+    /*left: 0;*/
+    margin:0px;
+    backdrop-filter: blur(5px);
+}
+.contenedorNosotros{
+    display: flex;
+    flex-direction: row;
+   /* flex-wrap: nowrap;*/
+    justify-content: space-evenly;
+    /*border: 5px solid white;*/
+}
+.contenedorRetratos{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: nowrap;*/
+    justify-content: space-evenly;
+   /* border: 2px solid blue;*/
+}
+.contenedorFooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorTarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.contenedorHorizontal{
+    display: flex;
+    flex-direction: row;
+   /* border: 2px solid green;*/
+    justify-content: center;
+}
+.tarjetaServicios{
+    width: 15vw;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    margin: 0px 1vw 0px 1vw;
+    padding: 0.7rem;
+}
+.tServicio:hover{
+    transform:scale(1.05);
+    transition-duration: .3s;
+    overflow: hidden;
+}
+.tarjeta{
+    width: 20vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(255,255,255,.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin:0px;
+}
+.tarjeta:hover {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    transition-duration: .7s;
+    transition-timing-function: ease, ease-in-out, ease, ease-in-out, ease;
+    
+        /*width: 25vw;
+    height: auto;
+    
+    transition-property: width, box-shadow, color, padding, border-radius;
+    transition-duration: 0.25s, 250ms, 0.25s, 250ms, 0.25s;
+     transition-timing-function: ease, ease-in-out, ease, ease-in-out, ease;
+     */
+}
+
+.retrato{
+    width: 10vw;
+    border-radius: 20px;
+    filter: grayscale(0);
+    margin: 1rem;
+}
+.retrato:hover{
+    filter: grayscale(1);
+    transition-property: filter;
+        transition-duration: 1s;   
+}
+.marcas{
+    height: 125px;
+    transition: 1s;
+}
+.container {
+    overflow: hidden;
+}
+  
+.sliding-background {
+    background: url("img/marcas.png") repeat-x;
+    height: 200px;
+    width: 6000px;
+    animation: slide 60s linear infinite;
+}
+  
+@keyframes slide{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-2000px, 0, 0);
+    }
+}
+.precio{
+    color: rgb(129, 223, 255) ;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+/*
+hr{
+    size:10px;
+    color: rgb(134, 134, 134);
+}
+
+/* input y textarea lo uso para el formulario de contacto*/
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    font-family:'Space Grotesk', sans-serif ;
+}
+.menu {
+    display: flex;
+    font-size: 1.4rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    align-items: center;
+    /*border-radius: 1vw;*/
+    /*padding: 1vw;*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+    z-index: 1;
+    position: fixed;  
+    top: 0px;
+    backdrop-filter: blur(10px);
+    width: 100vw;
+}
+#wrapper{
+    padding-bottom: 81px;
+    min-height: calc(100% - 81px);
+    position: relative;
+}
+
