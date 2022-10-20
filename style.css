@@ -161,11 +161,13 @@ footer
     backdrop-filter: blur(10px);
     margin: 0px 1vw 0px 1vw;
     padding: 0.7rem;
+    transition: 2s;
 }
 .tServicio:hover{
     transform:scale(1.05);
-    transition-duration: .3s;
+    transition-duration: .5s;
     overflow: hidden;
+    
 }
 .tarjeta{
     width: 20vw;
@@ -176,6 +178,7 @@ footer
     backdrop-filter: blur(10px);
     text-align: center;
     margin:0px;
+    transition: width 1s, height 2s,transform 2s;
 }
 .tarjeta:hover {
     -webkit-transform:scale(1.2);
@@ -272,4 +275,3 @@ input, textarea {
     min-height: calc(100% - 81px);
     position: relative;
 }
-
