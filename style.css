@@ -115,6 +115,10 @@ footer
     margin:0px;
     backdrop-filter: blur(5px);
 }
+.videoPortada{
+    height:500px;
+    width:600px;
+}
 .pFooter{
     font-size: .8rem; 
     margin: .3rem;
@@ -152,7 +156,9 @@ footer
    /* border: 2px solid green;*/
     justify-content: center;
 }
-
+.logo{
+    margin:0px 3rem 0px 3rem;
+}
 .tarjetaServicios{
     width: 15vw;
     height:fit-content;
@@ -177,19 +183,15 @@ footer
     text-align: center;
     margin:0px;
 }
+.icoTipo{
+    width: 15vw;
+}
 .tarjeta:hover {
     -webkit-transform:scale(1.2);
     transform:scale(1.2);
     transition-duration: .7s;
     transition-timing-function: ease, ease-in-out, ease, ease-in-out, ease;
-    
-        /*width: 25vw;
-    height: auto;
-    
-    transition-property: width, box-shadow, color, padding, border-radius;
-    transition-duration: 0.25s, 250ms, 0.25s, 250ms, 0.25s;
-     transition-timing-function: ease, ease-in-out, ease, ease-in-out, ease;
-     */
+  
 }
 
 .retrato{
@@ -233,6 +235,14 @@ footer
     font-weight: bolder;
     font-size: 1.5rem;
 }
+.contenedorHorizontalFooter{
+    display: flex;
+    flex-direction: row;
+   /* border: 2px solid green;*/
+    justify-content: center;
+    padding-top: 1rem; 
+    align-items: center;
+}
 
 /*
 hr{
@@ -251,6 +261,9 @@ input, textarea {
     border-radius: 5px;
     font-family:'Space Grotesk', sans-serif ;
 }
+.pSimple{
+    margin:20px;
+}
 .menu {
     display: flex;
     font-size: 1.4rem;
@@ -267,9 +280,146 @@ input, textarea {
     backdrop-filter: blur(10px);
     width: 100vw;
 }
+.pPersonal{
+    width:100%; 
+    text-align: justify; 
+    margin:0px;
+}
+.pDerecha{
+    width: 300px; 
+    margin-right: 5rem;
+}
+.pNombre{
+    text-align: center;
+}
 #wrapper{
     padding-bottom: 81px;
     min-height: calc(100% - 81px);
     position: relative;
+}
+.redes{
+    height:30px;
+}
+
+/*Corte para Samsung S20 Ultra Android 11*/
+@media screen and (max-width:412px){
+.videoPortada{
+    display: none;
+}
+.pSimple{
+    margin:1vw;
+    font-size: smaller;
+    text-align: justify;
+}
+h2{
+    font-size: 1.5rem;
+}
+.menu {
+    display: flex;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+    z-index: 1;
+    position: sticky;  
+    top: 0px;
+    backdrop-filter: blur(10px);
+    width: 100vw;
+}
+.logo{
+    display:none;
+}
+.sliding-background{
+    display: none;
+}
+.contenedorHorizontal{
+    display: flex;
+    flex-direction: column;
+   /* border: 2px solid green;*/
+    justify-content: center;
+}
+.tarjetaServicios{
+    width: 90%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    /*margin: 0px 1vw 0px 1vw;*/
+    padding: 0.7rem;
+}
+.icoTipo{
+    width: 45vw;
+}
+.contenedorTarjetas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(255,255,255,.1);
+    backdrop-filter: blur(10px);
+    justify-content:  center;
+    margin:2vw;;
+}
+.tarjeta:hover {
+    -webkit-transform:scale(1.07);
+    transform:scale(1.07);
+    transition-duration: .2s;
+    transition-timing-function: ease, ease-in-out, ease, ease-in-out, ease;
+
+}
+h1{
+    font-size: 2rem;
+}
+h1:hover{
+    font-size: 2rem;
+}
+
+/*.contenedorRetratos{
+    display: none;
+}*/
+.retrato{
+    display: none;
+}
+.pDerecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.pPersonal{
+    width:100%; 
+    text-align: justify; 
+    margin:0px;
+}
+.pNombre{
+    font-size: .8rem;
+    font-style: italic;
+    
+}
+.contenedorHorizontalFooter{
+    display: flex;
+    flex-direction: row;
+   /* border: 2px solid green;*/
+    justify-content: center;
+    padding-top: 1rem; 
+    align-items: center;
+}
+.redes{
+    height: 20px;   
+}
+.contenedorVertical{
+    display: none;
+}
 }
 
