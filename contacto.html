@@ -12,17 +12,28 @@
     </head>
 <body>
   <a name="inicio"></a>
-    <nav class="menu">  
-        <img src="img/logo.png">
-        <li><a href="index.html" ><img src="img\home.png" width="50"  height="50" class="head"></a></li>
-    </nav><br><br><br>
+    <nav class="menu">
+        <li><a href="index.html" ><img src="img/logo.png"></a></li>
+    </nav><br><br><br><br>
+
+    <section class="contenedorNosotros">
+      <!--<img src="img/portada1.png" width="800vw" height="400px;" alt="portada"> -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.5967981341337!2d-58.41732820581843!3d-34.62454767316955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaff71397a19%3A0xb25769273b0740f5!2sAv.%20Boedo%20925%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1667083500037!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div>
+          <h2>Encontranos en nuestras oficinas en:</h2>
+          <br><h2>Av. Boedo 924</h2>
+          <div ><!--style="transform: skewX(-26deg);"-->
+          <br><br><h2> Podes llamarnos de lunes a viernes de 9:00 a 17:00 al:</h2>
+          <h2> 0810-666-1234 </h2><br>
+          <h2>O completa el formulario y te contactamos</h2>
+          <!--style="margin: 20px;transform: skewX(26deg);width:25rem;"-->
+      </div>
+  </section>
 
     <div class="container">
-    <h2> Podes llamarnos de lunes a viernes de 9:00 a 17:00 al:</h2>
-    <h2> 0810-666-1234 </h2><br>
-    <h2> O completa con tus datos y te contactamos: </h2>
         <form action="https://formsubmit.co/marianoweiss@live.com.ar" name="formulario" method="POST">
             <div class="col-6">
+              <br>
               <label for="name" class="p-1 mb-2 bg-secondary text-white">Nombre:</label>
               <input type="text" class="form-control" name="nombre" id="nombre" maxlength="30" placeholder="Indicanos un nombre de contacto, podes ser vos o alguien mas..."><br>
               <label for="telefono" class="p-1 mb-2 bg-secondary text-white">Telefono:</label>
@@ -34,31 +45,37 @@
               <label for="horarioContacto" class="p-1 mb-2 bg-secondary text-white">Horario de contacto:</label>
               <select class="form-control" id="desde" name="desde">
                 <option value="">- Desde las: -</option>
-                <option value="9">9:00</option>
-                <option value="10">10:00</option>
-                <option value="11">11:00</option>
-                <option value="12">12:00</option>
-                <option value="13">13:00</option>
-                <option value="14">14:00</option>
-                <option value="15">15:00</option>
-                <option value="16">16:00</option>
-                <option value="17">17:00</option>
-                <option value="18">18:00</option>
+                <option value=9>9:00</option>
+                <option value=10>10:00</option>
+                <option value=11>11:00</option>
+                <option value=12>12:00</option>
+                <option value=13>13:00</option>
+                <option value=14>14:00</option>
+                <option value=15>15:00</option>
+                <option value=16>16:00</option>
+                <option value=17>17:00</option>
+                <option value=18>18:00</option>
               </select>
               <select class="form-control" id="hasta" name="hasta">
                 <option value="">- Hasta las: -</option>
-                <option value="9">9:00</option>
-                <option value="10">10:00</option>
-                <option value="11">11:00</option>
-                <option value="12">12:00</option>
-                <option value="13">13:00</option>
-                <option value="14">14:00</option>
-                <option value="15">15:00</option>
-                <option value="16">16:00</option>
-                <option value="17">17:00</option>
-                <option value="18">18:00</option>
+                <option value=9>9:00</option>
+                <option value=10>10:00</option>
+                <option value=11>11:00</option>
+                <option value=12>12:00</option>
+                <option value=13>13:00</option>
+                <option value=14>14:00</option>
+                <option value=15>15:00</option>
+                <option value=16>16:00</option>
+                <option value=17>17:00</option>
+                <option value=18>18:00</option>
               </select>
-            </div><br>
+            </div>
+              <br>
+            <div>
+              <label for="comments" class="p-1 mb-2 bg-secondary text-white">Por favor agreganos una breve descripcion del motivo de contanto:</label><br>
+              <textarea cols="90" rows="5" name="comments" id="comments"></textarea>
+            </div>
+            <br>
             <div class="form-group form-check">
               <label class="form-check-label">
                   <h3> Indicanos porfavor que operacion deseas realizar: </h3>
@@ -217,6 +234,7 @@ if (formulario.optradio[0].checked == true ||
           validarNombre(e);
           validarTelefono(e);
           validarMail(e);
+          validarHorario(e);
           validarCheckbox(e);
           validarRadio(e);
           validarDescripcion(e);
@@ -347,6 +365,21 @@ li
   flex-direction: row;
   /* border: 2px solid green;*/
   justify-content: center;
+}
+
+.mapa 
+{
+  float:left;
+  max-width: 100%;
+  height: auto;
+}
+
+.contenedorNosotros{
+    display: flex;
+    flex-direction: row;
+   /* flex-wrap: nowrap;*/
+    justify-content: space-evenly;
+    border: 5px solid white;
 }
 </style>
 </html>
